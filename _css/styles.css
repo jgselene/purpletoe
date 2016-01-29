@@ -1,0 +1,160 @@
+#container {
+	background-color: black;
+}
+
+header {
+	text-align: center;
+	background-color: #353B41;
+
+}
+
+nav {
+	text-align: center;
+}
+nav a {
+		display: inline-block;
+		/*background-color: #0C1024;*/
+		color: white;
+		width: 150px;
+		line-height: 50px;
+		text-decoration: none;
+		text-transform: uppercase;
+		/*border-radius: 10px 0px;*/
+	}
+
+a:hover {
+	color:#B8A3D7;
+}
+
+a.chosen {
+	color:#B5D463;
+}
+
+/*--------------------------------------------
+| Mobile First :: default
+--------------------------------------------*/
+	#container {
+		width: 100%;
+		line-height: 60px;
+		text-align: center;
+		/*font-size: 40px;*/
+		/*background-color: #4EA7AC;*/
+	}
+
+	#main {
+		height: auto;	
+		padding: 20px; 
+		background-color: black;
+	}
+
+	#main .home {
+		padding: 15px; 
+		background-color: black;  
+		color: white;
+		font-size: 14px;
+		line-height: 29px;
+		text-align: center;
+	}
+
+	#main .about {
+		background-color: black;  
+		color: white;
+		font-size: 14px;
+		line-height: 29px;
+		height: auto;
+		text-align: center;
+	}
+
+	#main .gallery {
+		padding: 15px; 
+		background-color: black;  
+		color: white;
+		font-size: 14px;
+		line-height: 29px;
+		height: auto;
+		text-align: center;
+	}
+
+	#main .contact {
+		padding: 15px; 
+		background-color: black;  
+		color: white;
+		font-size: 14px;
+		line-height: 29px;
+		text-align: center;
+	}
+
+	#main aside {
+		padding: 15px;
+		width: 75%;
+		height: auto;
+		text-align: center; 
+		color: white;
+		line-height: 5px;
+		position: relative;
+		margin: auto;
+	}
+
+	#main aside img {
+		width: 50%;
+		height: auto;
+		padding: 5px;
+		border-radius: 30px;
+		background-color: black;
+		position: relative;
+		left: 10px;
+	}
+
+	#main .purpleToe {
+		width: 75%;
+		background-color: black;
+		color: white;
+		margin: auto;
+		/*position: relative;*/
+		/*top: 15px;*/
+	}
+
+	#main h1 {
+		padding: 5px;
+		font-style: 14px;
+	}
+
+	#main p {
+		margin: 10px;
+	}
+
+	#box {
+		border-radius: 10px;
+		margin: auto;
+		padding: 20px;
+		text-align: center;
+	}
+
+	#box .large img {
+		/*position: relative;*/
+		/*float: left;*/
+		top: 30px;
+		border: solid #FFE7FA;
+		border-radius: 5px;
+		height: 300px;
+		width: 75%;
+	}
+
+	footer 	{
+		padding: 20px; 
+		background-color: black; 
+		text-align: center; 
+		line-height: 100px; 
+		font-size: 12px; 
+		opacity: .8;
+	}
+
+
+
+
+
+
+
+
+
+

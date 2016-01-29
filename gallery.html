@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purple Toe Skateboarding</title>
+	<link rel="stylesheet" type="text/css" href="_css/styles.css">
+	<link rel="stylesheet" href="_css/bootstrap.min.css">
+</head>
+	<body>
+		<div id="container">
+			<header>
+				<img class="logo" src="_img/purpletoe-02.png" height="300" width="300">	
+			</header>
+
+			<nav>
+					<a href="index.html">
+						<div class="glyphicon glyphicon-home"></div>
+						Home</a>
+					<a href="about.html">
+						<div class="glyphicon glyphicon-user"></div>
+						About</a>
+					<a href="gallery.html" class="chosen">
+						<div class="glyphicon glyphicon-picture"></div>
+						Gallery</a>
+					<a href="contact.html">
+						<div class="glyphicon glyphicon-envelope"></div>
+						Contact</a>
+				</nav>
+
+			<div id="main" class="cf">
+				<article class="gallery">
+					<div id="box">
+						<div class="large">
+							<img class="large" src="_img/luan.jpg">
+						</div>	
+						
+					<h1>Portfolio</h1>
+
+					<div class="thumbnails">
+						<img data-large="_img/luan.jpg" src="_img/luan.jpg" height="100" width="100">
+						<img data-large="_img/daewon.jpeg" src="_img/daewon.jpeg" height="100" width="100">
+						<img data-large="_img/leticia.jpg" src="_img/leticia.jpg" height="100" width="100">
+						<img data-large="_img/jayadams.jpg" src="_img/jayadams.jpg" height="100" width="100">
+						<img data-large="_img/tony.jpg" src="_img/tony.jpg" height="100" width="100">
+						<img data-large="_img/allysha.jpg" src="_img/allysha.jpg" height="100" width="100">
+						<img data-large="_img/lizzie.jpg" src="_img/lizzie.jpg" height="100" width="100">
+						<img data-large="_img/alana.jpg" src="_img/alana.jpg" height="100" width="100">
+						<img data-large="_img/nora.jpg" src="_img/nora.jpg" height="100" width="100">
+					</div>	
+				</article>	
+				
+			</div>
+			<footer>FOOTER</footer>	
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+					var large = $('#box .large img');
+
+					$('#box .thumbnails img').mouseover(function(){
+						var theSrc = $(this).attr('src');
+						large.attr('src',theSrc);
+					});
+				});
+		</script>
+			
+		
+	</body>
+</html>
