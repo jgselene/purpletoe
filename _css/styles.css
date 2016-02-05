@@ -4,23 +4,24 @@
 
 header {
 	text-align: center;
-	background-color: #353B41;
-
+	z-index: -1;
+	background-color: #796C6C;
+	opacity: .8;
 }
 
 nav {
 	text-align: center;
 }
 nav a {
-		display: inline-block;
-		/*background-color: #0C1024;*/
-		color: white;
-		width: 150px;
-		line-height: 50px;
-		text-decoration: none;
-		text-transform: uppercase;
-		/*border-radius: 10px 0px;*/
-	}
+	display: inline-block;
+	/*background-color: #0C1024;*/
+	color: white;
+	width: 150px;
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*border-radius: 10px 0px;*/
+}
 
 a:hover {
 	color:#B8A3D7;
@@ -28,6 +29,46 @@ a:hover {
 
 a.chosen {
 	color:#B5D463;
+}
+
+.logo img{
+	z-index: 1;
+}
+
+#slideshow {
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin:auto;
+	border-radius: 5px;
+	z-index: -1;
+}
+
+#slideshow img {
+	position: absolute;
+	left: 0px; 
+	top: 0px;
+	z-index: -1;
+	text-align: center;
+}
+
+#slideshow-2 {
+	z-index: 0;/*
+	position: absolute;*/
+	left: 800px;
+	top: 0px;
+	margin:auto;
+	border-radius: 5px;
+	z-index: -1;
+}
+
+#slideshow-2 img {
+	position: absolute;
+	left: 725px; 
+	top: 0px;
+	z-index: -1;
+	text-align: center;
 }
 
 /*--------------------------------------------
@@ -136,7 +177,7 @@ a.chosen {
 		top: 30px;
 		border: solid #FFE7FA;
 		border-radius: 5px;
-		height: 300px;
+		height: 700px;
 		width: 75%;
 	}
 
@@ -149,6 +190,13 @@ a.chosen {
 		opacity: .8;
 	}
 
+	#slideshow {
+		width: 75%
+	}
+
+	#slideshow-2 {
+		width: 75%;
+	}
 
 
 
