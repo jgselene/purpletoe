@@ -6,7 +6,7 @@ header {
 	text-align: center;
 	z-index: -1;
 	background-color: #796C6C;
-	opacity: .8;
+	opacity: .9;
 }
 
 nav {
@@ -15,7 +15,7 @@ nav {
 nav a {
 	display: inline-block;
 	/*background-color: #0C1024;*/
-	color: white;
+	color: black;
 	width: 150px;
 	line-height: 50px;
 	text-decoration: none;
@@ -24,19 +24,14 @@ nav a {
 }
 
 a:hover {
-	color:#B8A3D7;
+	color:#141212;
 }
 
 a.chosen {
-	color:#B5D463;
-}
-
-.logo img{
-	z-index: 1;
+	color:#5E5787;
 }
 
 #slideshow {
-	z-index: 0;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -48,24 +43,6 @@ a.chosen {
 #slideshow img {
 	position: absolute;
 	left: 0px; 
-	top: 0px;
-	z-index: -1;
-	text-align: center;
-}
-
-#slideshow-2 {
-	z-index: 0;/*
-	position: absolute;*/
-	left: 800px;
-	top: 0px;
-	margin:auto;
-	border-radius: 5px;
-	z-index: -1;
-}
-
-#slideshow-2 img {
-	position: absolute;
-	left: 725px; 
 	top: 0px;
 	z-index: -1;
 	text-align: center;
