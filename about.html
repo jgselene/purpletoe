@@ -8,23 +8,28 @@
 	<body>
 		<div id="container">
 			<header>
-				<img class="logo" src="_img/purpletoe-02.png" height="300" width="300">	
+				<img class="logo" src="_img/purpletoe-02.png" height="300" width="300">
+				
+				<div id="slideshow">
+					<img src="_img/header-photos/slide1.jpg">
+					<img src="_img/header-photos/slide2.jpg" height="375" width="1442">
+				</div>
 			</header>
 
 			<nav>
-					<a href="index.html">
-						<div class="glyphicon glyphicon-home"></div>
-						Home</a>
-					<a href="about.html" class="chosen">
-						<div class="glyphicon glyphicon-user"></div>
-						About</a>
-					<a href="gallery.html">
-						<div class="glyphicon glyphicon-picture"></div>
-						Gallery</a>
-					<a href="contact.html">
-						<div class="glyphicon glyphicon-envelope"></div>
-						Contact</a>
-				</nav>
+				<a href="index.html" class="chosen">
+					<div class="glyphicon glyphicon-home"> Home</div>
+				</a>
+				<a href="about.html">
+					<div class="glyphicon glyphicon-user"> About</div>
+				</a>
+				<a href="gallery.html">
+					<div class="glyphicon glyphicon-picture"> Gallery</div>
+				</a>
+				<a href="contact.html">
+					<div class="glyphicon glyphicon-envelope"> Contact</div>
+				</a>
+			</nav>
 
 			<div id="main" class="cf">
 				<aside>
@@ -46,11 +51,27 @@
 				</article>
 			</div>
 			<footer></footer>
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script type="js/jquery-1.11.0.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-			
-		
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script type="text/javascript" type="js/jquery-1.11.0.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function(){
+				function firstSlideshow() {
+					var slideshow = $('#slideshow');
+
+					function slideshow_fade() {
+						lasting = slideshow.find('img:last');
+
+						lasting.delay(4000).animate({'opacity':'0'},1000, function(){
+							lasting.prependTo(slideshow).css({'opacity':'1'});
+							slideshow_fade();
+						});
+					}
+
+					slideshow_fade();
+				}
+				firstSlideshow();
+			});
+		</script>
 	</body>
 </html>
