@@ -2,28 +2,22 @@
 <html>
 <head>
 	<title>Purple Toe Skateboarding</title>
-	<link rel="stylesheet" type="text/css" href="_css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 	<body>
 		<div id="container">
 			<header>
 				<img class="logo" src="img/purpletoe-02.png" height="300" width="300">
-				
-				<div id="slideshow">
-					<img src="img/header-photos/slide1.jpg">
-					<img src="img/header-photos/slide2.jpg" height="375" width="1442">
-				</div>
 			</header>
-
 			<nav>
-				<a href="index.html" class="chosen">
+				<a href="index.html">
 					<div class="glyphicon glyphicon-home"> Home</div>
 				</a>
 				<a href="about.html">
 					<div class="glyphicon glyphicon-user"> About</div>
 				</a>
-				<a href="gallery.html">
+				<a href="gallery.html" class="chosen">
 					<div class="glyphicon glyphicon-picture"> Gallery</div>
 				</a>
 				<a href="contact.html">
@@ -32,50 +26,54 @@
 			</nav>
 
 			<div id="main" class="cf">
-				<article class="gallery">
+				<article>
 					<div id="box">
 						<div class="large">
-							<img class="large" src="_img/luan.jpg">
+							<img class="large" src="img/gallery/luan.jpg">
 						</div>	
-						
-					<h1>Portfolio</h1>
-
-					<div class="thumbnails">
-						<img data-large="_img/luan.jpg" src="_img/luan.jpg" height="100" width="100">
-						<img data-large="_img/daewon.jpeg" src="_img/daewon.jpeg" height="100" width="100">
-						<img data-large="_img/leticia.jpg" src="_img/leticia.jpg" height="100" width="100">
-						<img data-large="_img/jayadams.jpg" src="_img/jayadams.jpg" height="100" width="100">
-						<img data-large="_img/tony.jpg" src="_img/tony.jpg" height="100" width="100">
-						<img data-large="_img/allysha.jpg" src="_img/allysha.jpg" height="100" width="100">
-						<img data-large="_img/lizzie.jpg" src="_img/lizzie.jpg" height="100" width="100">
-						<img data-large="_img/alana.jpg" src="_img/alana.jpg" height="100" width="100">
-						<img data-large="_img/nora.jpg" src="_img/nora.jpg" height="100" width="100">
-					</div>	
-				</article>	
 				
+					<div class="thumbnails">
+						<img data-large="img/gallery/luan.jpg" src="img/gallery/luan.jpg" height="100" width="100">
+						<img data-large="img/gallery/daewon.jpeg" src="img/gallery/daewon.jpeg" height="100" width="100">
+						<img data-large="img/gallery/leticia.jpg" src="img/gallery/leticia.jpg" height="100" width="100">
+						<img data-large="img/gallery/jayadams.jpg" src="img/gallery/jayadams.jpg" height="100" width="100">
+						<img data-large="img/gallery/tony.jpg" src="img/gallery/tony.jpg" height="100" width="100">
+						<img data-large="img/gallery/allysha.jpg" src="img/gallery/allysha.jpg" height="100" width="100">
+						<img data-large="img/gallery/lizzie.jpg" src="img/gallery/lizzie.jpg" height="100" width="100">
+						<img data-large="img/gallery/alana.jpg" src="img/gallery/alana.jpg" height="100" width="100">
+						<img data-large="img/gallery/nora.jpg" src="img/gallery/nora.jpg" height="100" width="100">
+						<img data-large="img/gallery/paul.jpg" src="img/gallery/paul.jpg" height="100" width="100">
+						<img data-large="img/gallery/matt.jpg" src="img/gallery/matt.jpg" height="100" width="100">
+						<img data-large="img/gallery/riley.jpg" src="img/gallery/riley.jpg" height="100" width="100">
+						<img data-large="img/gallery/david.jpg" src="img/gallery/david.jpg" height="100" width="100">
+						<img data-large="img/gallery/chriscole.jpg" src="img/gallery/chriscole.jpg" height="100" width="100">
+						<img data-large="img/gallery/haslam.jpg" src="img/gallery/haslam.jpg" height="100" width="100">
+						<img data-large="img/gallery/kelvin.jpg" src="img/gallery/kelvin.jpg" height="100" width="100">
+						<img data-large="img/gallery/luan.jpg" src="img/gallery/luan.jpg" height="100" width="100">
+						<img data-large="img/gallery/daewon.jpeg" src="img/gallery/daewon.jpeg" height="100" width="100">
+						<img data-large="img/gallery/leticia.jpg" src="img/gallery/leticia.jpg" height="100" width="100">
+						<img data-large="img/gallery/jayadams.jpg" src="img/gallery/jayadams.jpg" height="100" width="100">
+						<img data-large="img/gallery/tony.jpg" src="img/gallery/tony.jpg" height="100" width="100">
+						<img data-large="img/gallery/allysha.jpg" src="img/gallery/allysha.jpg" height="100" width="100">
+						<img data-large="img/gallery/lizzie.jpg" src="img/gallery/lizzie.jpg" height="100" width="100">
+						<img data-large="img/gallery/alana.jpg" src="img/gallery/alana.jpg" height="100" width="100">
+						<img data-large="img/gallery/alana.jpg" src="img/gallery/alana.jpg" height="100" width="100">
+					</div>	
+				</article>
 			</div>
-			<footer>FOOTER</footer>
-			<script src="js/jquery-1.11.3.min.js"></script>
-			<script type="text/javascript" type="js/jquery-1.11.0.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script type="text/javascript">
+		<footer></footer>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
 			$(document).ready(function(){
-				function firstSlideshow() {
-					var slideshow = $('#slideshow');
+					var large = $('.large img');
 
-					function slideshow_fade() {
-						lasting = slideshow.find('img:last');
-
-						lasting.delay(4000).animate({'opacity':'0'},1000, function(){
-							lasting.prependTo(slideshow).css({'opacity':'1'});
-							slideshow_fade();
-						});
-					}
-
-					slideshow_fade();
-				}
-				firstSlideshow();
-			});
+					$('.thumbnails img').click(function(){
+						var theSrc = $(this).attr('src');
+						large.attr('src',theSrc);
+					});
+				});
 		</script>
 	</body>
 </html>

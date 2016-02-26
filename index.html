@@ -7,16 +7,13 @@
 </head>
 	<body>
 		<div id="container">
-
 			<header>
-			<img class="logo" src="img/purpletoe-02.png" height="300" width="300">
-			
-			<div id="slideshow">
-				<img src="img/header-photos/slide1.jpg">
-				<img src="img/header-photos/slide2.jpg" height="375" width="1442">
-			</div>
-
+				<img class="logo" src="img/purpletoe-02.png" height="300" width="300">
+				
 			</header>
+			<nav>
+				<a href="login.php">
+			</nav>
 			<nav>
 				<a href="index.html" class="chosen">
 					<div class="glyphicon glyphicon-home"> Home</div>
@@ -32,39 +29,43 @@
 				</a>
 			</nav>
 
-				<div id="main" class="cf">
-					<article class="home">
-						<h1>Welcome!</h1>
-						<p>This is all about skatebaording and more!</p>
-						<p>Keep up with the latest shredders and skate gear. Wanna know more about a skater, we have interviews!
-						Can't land a trick, we have how to videos. We also have galleries of some of your favorite skaters!</p>
-						<p>Please enjoy!</p>
+			<div id="main" class="cf">
+				<article class="home">
+					<h1>Welcome!</h1>
+					<p>fhdjskalvbjkbvjdsafhjdksahfjdaskg</p>
+				</article>
 
-					</article>
-				</div>
+				<div id="slides">
+					<img src="img/header-photos/slide1.jpg">
+					<img src="img/header-photos/slide2.jpg">
+				</div> 
+
+			</div>
+<!-- 			<footer>
+			</footer> -->
 		</div>
-		<footer></footer>
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" type="js/jquery-1.11.0.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	  	<!-- End SlidesJS Required -->
+	  	<!-- SlidesJS Required: Link to jquery.slides.js -->
+	  	<script src="js/jquery.slides.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				function firstSlideshow() {
-					var slideshow = $('#slideshow');
+		
 
-					function slideshow_fade() {
-						lasting = slideshow.find('img:last');
+		<script>
+		$(function(){
+	      $("#slides").slidesjs({
+	      	width: 300,
+        	height: 220,
+	      	pagination: {
+		      active: false
+    		},
+	        navigation: false,
+	        play: {
+      			auto: true
+  			}
+	      });
+	    });
+		 </script>
 
-						lasting.delay(4000).animate({'opacity':'0'},1000, function(){
-							lasting.prependTo(slideshow).css({'opacity':'1'});
-							slideshow_fade();
-						});
-					}
-
-					slideshow_fade();
-				}
-				firstSlideshow();
-			});
-		</script>	
 	</body>
 </html>
