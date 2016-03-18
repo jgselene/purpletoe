@@ -156,10 +156,10 @@
 		margin: auto;
 	}
 
-	#main p {
-		margin: 10px;
-		width: 300px;
-		text-align: left;
+	p {
+		margin: auto;
+		text-align: center;
+		font-size: 18px;
 	}
 
 	#box {
