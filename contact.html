@@ -29,18 +29,51 @@
 			<div id="main" class="cf">
 
 				<article class="contact">
-					<h1>Thanks for Visiting!</h1>
-					<p>You can also catch more of my work on these social media sites.</p>
-					<p>Facebook: facebook.com/jackie.gutierrez.33</p>
-					<p>Instagram: @jgselene_</p>
-					<p>Twitter: @jgselene_</p>
-					<p>Wix: jackiegutierrez789.wix.com/selenearts</p>
-					<p>LinkedIn: linkedin.com/pub/jackie-gutierrez/b6/648/205</p>
-					<p>Email: jackiegutierrez789@msn.com</p>
-
+					<form method="post" action="?">
+						<ul>
+							<li>
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</li>
+							<li>
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							<li>
+								<label for="topic">Topic</label>
+								<select id="topic" name="topic">
+									<option value="Sponsor">Sponsor</option>
+									<option value="Promos">Promos</option>
+									<option value="Team">Team</option>
+								</select>
+							</li>
+							<li>
+								<label for="message">Message:</label>
+								<textarea id="message" name="message" col="42" rows="9"></textarea>
+							</li>
+							<li>
+								<input type="submit" value="submit">
+							</li>
+						</ul>
+					</form>
 				</article>
 			</div>
-			<footer>FOOTER</footer>
+			<footer>
+				<div class="social">
+					<a href="https://www.instagram.com/jgselene_/?hl=en" target="_blank">
+						<img src="img/png/facebook-large-icon-png.png" width="30" height="30">
+					</a>
+					<a href="https://www.instagram.com/jgselene_/?hl=en">
+						<img src="img/png/instagram.png" width="30" height="30">
+					</a>
+					<a href="https://twitter.com/jgselene_">
+						<img src="img/png/twitter.png" width="30" height="30">
+					</a>
+					<a href="http://jgselene.tumblr.com/">
+						<img src="img/png/tumblr.png" width="30" height="30">
+					</a>	
+				</div>
+			</footer>
+		</div>	
 			<script src="js/jquery-1.11.3.min.js"></script>
 			<script type="text/javascript" type="js/jquery-1.11.0.js"></script>
 			<script src="js/bootstrap.min.js"></script>

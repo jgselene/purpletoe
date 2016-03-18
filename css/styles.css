@@ -1,15 +1,14 @@
 	#container {
 		background-color: #0C1024;
-		background-image: url(../img/background.png);
-		background-repeat: none
+		background-image: url(../img/background.png); 
 	}
-
-	/*#slides {
+/*
+	#slides {
 		display: none;
 	}*/
 
 	.slidesjs-container {
-		max-height: auto;;
+		max-height: auto;
 	}
 
 	header {
@@ -51,6 +50,56 @@
 	    text-align: left;
 
 	}
+
+	.contact form {
+		background-color: black;
+		width: 100%;
+		margin: auto;
+		font-style: 35px;
+	}
+
+	.contact form ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.contact form ul li {
+		margin: 15px 0;
+	}
+
+	.contact form label {
+		display: block;
+		font-size: 2em;
+		color: white;
+		margin-top: 15px;
+	}
+
+	.contact form input, textarea, select {
+		font-size: 2em;
+		padding: 5px;
+		border: #ccc 3px solid;
+		width: 75%;
+		margin: 20px;
+	}
+	
+	select#topic{
+		font-size: 35px;
+		color: black;
+	}
+
+	.contact form input {
+		color: black;
+	}
+
+	/*.conact ul.a li {
+	    list-style-type: circle;
+	    width: auto;
+	    font-size: 20px;
+	    display: inline-block;
+	    text-align: left;
+	    padding: 20px;
+
+	}*/
 /*--------------------------------------------
 | Mobile First :: default
 --------------------------------------------*/
@@ -59,10 +108,42 @@
 		text-align: center;
 	}
 
-	article {
+	.home {
 		text-align: center;
 		background-color: black;
 		max-width: 100%;
+		margin: auto;
+		padding: 20px;
+		color: white;
+		display: inline-block;
+		height: auto;
+	}
+
+	.team {
+		text-align: center;
+		background-color: black;
+		width: 100%;
+		margin: auto;
+		color: white;
+		display: inline-block;
+		height: auto;
+	}
+
+	.gallery {
+		text-align: center;
+		background-color: black;
+		max-width: 100%;
+		margin: auto;
+		padding: 20px;
+		color: white;
+		display: inline-block;
+		height: auto;
+	}
+
+	.contact {
+		text-align: center;
+		background-color: black;
+		width: 100%;
 		margin: auto;
 		padding: 20px;
 		color: white;
@@ -75,31 +156,6 @@
 		margin: auto;
 	}
 
-
-	#main .about {
-		background-color: black;  
-		color: white;
-		font-size: 14px;
-		line-height: 29px;
-		height: auto;
-		text-align: center;
-	}
-
-	#main .contact {
-		padding: 15px; 
-		background-color: black;  
-		color: white;
-		font-size: 14px;
-		line-height: 29px;
-		text-align: center;
-	}
-
-	h1 {
-		color: white;
-		padding: 20px;
-		text-align: center;
-	}
-
 	#main p {
 		margin: 10px;
 		width: 300px;
@@ -107,17 +163,31 @@
 	}
 
 	#box {
-		padding-top: 30px;
+		max-width: 50%;
+    	float: left;
+	}
+
+	.large {
+	    margin: 0;
+	    padding: 0;
+	    display: inline-block;
 	}
 
 	#box .large img {
-		/*position: relative;*/
-		float: left;
-		top: 30px;
-		border: solid white;
-		border-radius: 5px;
-		height: 400px;
-		width: 50%;
+	    display: inline-block;
+	    border: solid white;
+	    border-radius: 5px;
+	    width: 110%;
+	}
+
+	article {
+		background-color: black;
+		height: auto;
+		color: white;
+	}
+	
+	article h1 {
+		padding-top: 20px; 
 	}
 
 	article .thumbnails {
@@ -128,12 +198,20 @@
 		padding: 20px;
 	}
 
+	.social {
+		padding: 25px;
+		margin-bottom: 10px;
+		max-width: 100%;
+	}
+
+	.social a {
+		margin: 15px;
+	}
+
 	footer 	{
 		background-color: black; 
 		text-align: center; 
-		line-height: 100px; 
-		font-size: 12px; 
-		max-width: 1090px;
+		width: 76%;
 		margin: auto;
 	}
 
